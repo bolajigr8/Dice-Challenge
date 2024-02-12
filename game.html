@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+  </head>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <body>
+    <nav class="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <div class="logo">
+            <div id="logo">
+              dice <span><i class="fa fa-flag"></i></span>
+            </div>
+
+            <span>game</span>
+          </div>
+          <div class="nav-btn"><i class="fas fa-bars"></i></div>
+        </div>
+        <!-- end of nav header -->
+        <!-- nav links -->
+        <ul class="links">
+          <li><a href="index.html" class="link">home</a></li>
+          <li><a href="game.html" class="link">game</a></li>
+        </ul>
+        <!-- end of nav links -->
+      </div>
+    </nav>
+    <main class="main">
+      <!-- form -->
+      <form class="form">
+        <p class="alert"></p>
+        <h3>Please, input your names!</h3>
+        <label>player 1:</label>
+        <input type="text" class="player-one" />
+        <label>player 2:</label>
+        <input type="text" class="player-two" />
+        <button class="btn submit-btn" type="submit">play!</button>
+      </form>
+      <!-- end of forms -->
+      <!-- game -->
+      <section class="game-section">
+        <div>
+          <h3 class="game-title">welcome! players</h3>
+        </div>
+        <article>
+          <div class="game-center">
+            <div class="game">
+              <!-- single player -->
+              <p class="player1-name">Bolaji</p>
+              <div class="img-vessel">
+                <img
+                  src="./images/red/1.png"
+                  alt=""
+                  class="img img1 game-img"
+                />
+              </div>
+            </div>
+            <!-- end of single player -->
+            <!-- single player -->
+            <div class="game">
+              <p class="player2-name">Bolaji</p>
+              <div class="img-vessel">
+                <img
+                  src="./images/red/1.png"
+                  alt=""
+                  class="img img2 game-img"
+                />
+              </div>
+            </div>
+            <!-- end of single player -->
+          </div>
+          <!-- buttons -->
+          <div class="button-container">
+            <button class="btn start-btn" type="button">start!</button>
+            <button class="btn replay-btn" type="button">re-play</button>
+            <button class="btn newGame-btn" type="button">new game</button>
+          </div>
+        </article>
+      </section>
+      <!-- end of game -->
+    </main>
+    <!-- java script -->
+    <script src="./js/game.js"></script>
+  </body>
+</html>
